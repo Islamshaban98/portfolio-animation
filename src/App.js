@@ -1,5 +1,12 @@
+import { Coursor } from "./component/Cursor/Coursor";
+
 function App() {
-  return <div>hello from react animation</div>;
+  return (
+    <div>
+      <a>hello there i am a link hover on me to see magic</a>
+      <Coursor />
+    </div>
+  );
 }
 
 export default App;
