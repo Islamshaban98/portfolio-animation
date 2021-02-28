@@ -1,0 +1,25 @@
+.light{
+    background-color: #dedede;
+    padding: 6rem 0;
+    color: #1a1a1a;
+    overflow-x: hidden;
+}
+.wrapper{
+    padding: 0 2rem; 
+    margin: 0 auto;
+    width: 100%;
+}
+h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 10rem;
+    text-align: center;
+    line-height: 10rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.dark-hr{
+  border: 0;
+  border-top: 2px solid #1a1a1a;
+  padding-bottom: 1rem;
+}

@@ -1,0 +1,105 @@
+.txtDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.helpTxt {
+  font-size: 4rem !important;
+  line-height: 4rem !important;
+  text-transform: uppercase;
+}
+.mainfest {
+  color: #a5ff75;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+  width: 60%;
+  cursor: pointer;
+}
+.mainfest::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 2rem;
+  height: 2.9rem;
+  margin-left: 1.5rem;
+  background-position: center center;
+  background-size: 100%;
+  background-image: url(../../img/arrow.svg);
+  background-repeat: no-repeat;
+}
+.mainfest:hover::after {
+  transform: rotate(45deg);
+}
+.txt2Div {
+  width: 60%;
+  padding-top: 15rem;
+  padding-left: 2rem;
+}
+.txt2Div > p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  line-height: 4rem;
+  color: #dedede;
+}
+.right {
+  margin-bottom: 20rem;
+  margin-top: 16rem;
+  text-align: right;
+  font-weight: 500;
+  color: #dedede;
+  padding: 2rem;
+}
+.right > p {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.right > p > a {
+  position: absolute;
+  bottom: -145%;
+  right: -8%;
+  text-align: left;
+  transform: rotate(90deg);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #dedede;
+  opacity: 0.3;
+  font-size: 6rem;
+  line-height:6rem;
+
+}
+@media only screen and (max-width: 960px) {
+  .txtDiv {
+    align-items: center;
+  }
+  .txt2Div > p {
+      font-size: 2rem;
+      line-height: 2rem;
+  }
+  .helpTxt {
+    font-size: 2rem !important;
+    line-height: 2rem !important;
+  }
+  .right{
+      margin-bottom: 7rem !important;
+      margin-top: 7rem !important;
+      padding: 0% !important;
+  }
+
+  .right > p {
+      font-size: 1rem !important;
+      padding:2rem;
+  } 
+  .right > p > a {
+      font-size: 2.5rem !important;
+      line-height: 2.5rem !important;
+      bottom: 21% !important;
+  }
+  .helpTxt2{
+      font-size: 1.5rem !important;
+  }
+}
