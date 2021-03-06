@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 // import Div from "./Cursor.style";
 import classNames from "classnames";
 import "./cursor.css";
@@ -30,16 +30,18 @@ export const Coursor = () => {
   const onMouseEnter = () => {
     setHidden(false);
   };
+
   const handleLinkHoverEvents = () => {
     document.querySelectorAll("a").forEach((el) => {
+      console.log(el);
       el.addEventListener("mouseover", () => setLinkHovered(true));
       el.addEventListener("mouseout", () => setLinkHovered(false));
     });
   };
 
-  const onMouseMove = (e) => {
+  const onMouseMove = useCallback((e) => {
     setPosition({ x: e.clientX, y: e.clientY });
-  };
+  }, []);
   const cursorHover = classNames("cursor", {
     "cursor--hidden": hidden,
     "cursor--link-hovered": linkHovered,

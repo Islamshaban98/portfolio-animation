@@ -1,0 +1,39 @@
+.contactBodyDiv{
+    margin-top: 20rem;
+    padding: 0 2rem;
+}
+.contactBodyDiv >hgroup{
+    color: #dedede;
+    text-transform: uppercase;
+}
+.contactBodyDiv > hgroup >h1{
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.contactBodyDiv >hgroup >p{
+    font-size: 9rem;
+    margin: 0;
+    line-height: 7.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.contactDiv{
+    width: 60%;
+    font-size: 2.4rem;
+    line-height: 2.2rem;
+    color: #dedede;
+    padding: 13rem 2rem;
+}
+.contactDiv >ol{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+}
+.contactDiv >ol>li>a{
+    color: #A5FF75;
+    background-color: transparent;
+}
+.contactDiv >ol>li>span{
+    text-decoration: line-through;
+}

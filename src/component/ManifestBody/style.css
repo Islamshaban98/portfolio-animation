@@ -1,0 +1,27 @@
+.manifestBodyDiv{
+    margin-top: 15rem;
+    padding: 0 2rem;
+}
+.manifestBodyDiv >hgroup{
+    color: #dedede;
+    text-transform: uppercase;
+}
+.manifestBodyDiv > hgroup >h1{
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.manifestBodyDiv >hgroup >p{
+    font-size: 9rem;
+    margin: 0;
+    line-height: 7.5rem;
+    font-weight: 300;
+}
+.paragDiv{
+    margin-top: 15rem;
+}
+.paragDiv p:last-child{
+  text-transform: uppercase;  
+  font-size: 4rem;
+  line-height: 4rem;
+  
+}

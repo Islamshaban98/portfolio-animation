@@ -20,11 +20,11 @@ const DesktopNav = () => {
         <img src={logo} alt="" style={{ width: "60px" }} />
       </a>
       <ul>
-        <li>
-          <a href="#portfolio">Works</a>
+        <li className="active">
+          <a href="#Home">Home</a>
         </li>
         <li>
-          <a href="#mainfest">Manifiesto</a>
+          <a>Manifiesto</a>
         </li>
         <li>
           <a>Contacto</a>

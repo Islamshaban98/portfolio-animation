@@ -5,8 +5,10 @@ import gsap from "gsap/gsap-core";
 // import Svg from "../SVG/svg";
 const HeroHeader = () => {
   const title = useRef();
+  const img = useRef();
   useEffect(() => {
     gsap.fromTo(title.current, { autoAlpha: 0 }, { autoAlpha: 1, duration: 5 });
+    gsap.fromTo(img.current, { autoAlpha: 0 }, { autoAlpha: 1, duration: 5 });
   }, [title]);
   return (
     <div className="hero-header">
@@ -43,7 +45,7 @@ const HeroHeader = () => {
         </hgroup>
         {/* <Svg /> */}
       </div>
-      <div style={{ marginTop: "-280px" }}>
+      <div style={{ marginTop: "-280px" }} ref={img}>
         <img src={profile} alt="" />
       </div>
     </div>

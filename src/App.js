@@ -6,18 +6,18 @@ import HeroHeader from "./component/HeroSection/HeroHeader";
 import LightBg from "./component/Light-bg/LightBg";
 import Nav from "./component/Nav/Nav";
 import W from "./component/W/W";
+import Contact from "./Pages/Contact";
+import Home from "./Pages/Home";
+import Mainfest from "./Pages/Manifest";
 
 function App() {
   return (
     <>
       <Coursor />
-      <Nav />
-      <W />
+      {/* <Home /> */}
+      {/* <Mainfest /> */}
+      <Contact />
       {/* <BeTxt /> */}
-      <HeroHeader />
-      <Body />
-      {/* <LightBg /> */}
-      <Footer />
     </>
   );
 }

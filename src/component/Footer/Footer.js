@@ -1,6 +1,34 @@
-import React from "react";
+import gsap from "gsap/gsap-core";
+import { Power3 } from "gsap/gsap-core";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import React, { useEffect } from "react";
 import "./style.css";
 export const Footer = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const anims = gsap.utils.toArray(".anim8");
+    anims.forEach((anim) => {
+      gsap.fromTo(
+        anim,
+        2,
+        {
+          opacity: 0,
+        },
+        {
+          y: -50,
+          duration: 0,
+          ease: Power3.easeOut,
+          opacity: 1,
+          delay: 0,
+          scrollTrigger: {
+            start: "top bottom",
+            end: "bottom center",
+            trigger: anim,
+          },
+        }
+      );
+    });
+  }, []);
   return (
     <>
       <section>
@@ -20,35 +48,71 @@ export const Footer = () => {
         </div>
         <div className="social-link">
           <ul>
-            <li>
-              <a href="mailto:hello@xavinogueres.work?Subject=Web%20inquiry">
+            <li className="anim8">
+              <a
+                href="mailto:hello@xavinogueres.work?Subject=Web%20inquiry"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Send me an email
               </a>
             </li>
-            <li>
-              <a href="mailto:hello@xavinogueres.work?Subject=Web%20inquiry">
+            <li className="anim8">
+              <a
+                href="mailto:hello@xavinogueres.work?Subject=Web%20inquiry"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Behance
               </a>
             </li>
-            <li>
-              <a href="https://dribbble.com/xavinogueres">Dribble</a>
+            <li className="anim8">
+              <a
+                href="https://dribbble.com/xavinogueres"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Dribble
+              </a>
             </li>
-            <li>
-              <a href="https://www.instagram.com/xavinogueres/">Instagram</a>
+            <li className="anim8">
+              <a
+                href="https://www.instagram.com/xavinogueres/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instagram
+              </a>
             </li>
-            <li>
-              <a href="https://www.twitter.com/xavinogueres/">Twitter</a>
+            <li className="anim8">
+              <a
+                href="https://www.twitter.com/xavinogueres/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Twitter
+              </a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com/in/xavinogueres/">Linkedin</a>
+            <li className="anim8">
+              <a
+                href="https://www.linkedin.com/in/xavinogueres/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Linkedin
+              </a>
             </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UCtNMQeeg_DRFn0aDWSERwig">
+            <li className="anim8">
+              <a
+                href="https://www.youtube.com/channel/UCtNMQeeg_DRFn0aDWSERwig"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Youtube
               </a>
             </li>
           </ul>
-          <p>Don't be shy...</p>
+          <p className="anim8">Don't be shy...</p>
           <h4>© Xavi Nogueres 2021</h4>
         </div>
       </section>

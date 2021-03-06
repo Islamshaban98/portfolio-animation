@@ -2,10 +2,12 @@ section{
     position: relative;
     width: 100%;
     overflow: hidden;
+    padding-top: 4rem;
 }
 .marquee-row {
   display: flex;
   width: 100%;
+  padding-bottom: 2rem;
 }
 section .marquee-row div{
   color: #dedede;
@@ -55,7 +57,7 @@ font-weight: 400;
 margin-bottom: 4rem;
 }
 .social-link > ul > li {
-    color: #dedede !important;
+    color: #dedede !important;   
 }
 .social-link > p {
     color:#A5FF75;
@@ -68,7 +70,6 @@ margin-bottom: 4rem;
     color:#dedede;
     font-size: 4vw;
     line-height: 4vw;
-    margin-bottom: 2rem;
     padding-left: 2rem ;
     font-style: italic;
     letter-spacing: -3;

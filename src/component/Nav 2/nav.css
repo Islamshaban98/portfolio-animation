@@ -16,6 +16,11 @@
   background-color: transparent;
   text-transform: uppercase;
 }
+.menu > ul > li :active{
+  border-bottom: 3px solid #A5FF75
+
+}
+
 
 .logo {
   cursor: pointer;

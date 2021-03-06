@@ -1,0 +1,33 @@
+.rightTxt{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 10rem;
+    line-height: 10rem;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+.sub-div-manifest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-div-manifest > p{
+    font-size: 4rem;
+    line-height: 4rem;
+}
+.sub-div-manifest span{
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -3;
+}
+.num{
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -3;
+    font-size: 2.5rem !important;
+}
+.hr_secondary2 {
+    border: 0;
+    border-top: thin solid #1a1a1a;
+    margin-bottom: 2rem ;
+  }

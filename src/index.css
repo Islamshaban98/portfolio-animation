@@ -9,6 +9,7 @@ body {
 html,
 body {
   background-color: #1a1a1a;
+  scroll-behavior: smooth;
 }
 body::before {
   background-image: url(../src/img/noise.png);
@@ -71,5 +72,6 @@ a {
   list-style: none;
   cursor: pointer ;
   color: inherit;
+  z-index: 999;
 }
 

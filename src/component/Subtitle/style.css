@@ -1,0 +1,37 @@
+.sub-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+.sub-tit {
+  font-size: 4rem;
+  line-height: 3rem;
+  z-index: 99;
+  text-transform: uppercase;
+}
+.sup {
+  position: relative;
+  font-size: 50%;
+  top: -0.5;
+  line-height: 0;
+}
+.sub-div > p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1rem;
+  font-style: italic;
+}
+.sub-tit > img { display: none; }
+.sub-tit:hover > img { 
+    display: block;
+    width: 500px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: exclusion;
+    transition: all 600ms ease-out; 
+    transition-property: opacity;
+    opacity: 1;
+    /* overflow: hidden; */
+
+}

@@ -1,25 +1,87 @@
-.light{
-    background-color: #dedede;
-    padding: 6rem 0;
-    color: #1a1a1a;
-    overflow-x: hidden;
+.light {
+  background-color: #dedede;
+  padding: 6rem 2rem;
+  color: #1a1a1a;
+  overflow-x: hidden;
 }
-.wrapper{
-    padding: 0 2rem; 
-    margin: 0 auto;
-    width: 100%;
-}
-h3{
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 10rem;
-    text-align: center;
-    line-height: 10rem;
-    margin: 0;
-    margin-bottom: 1rem;
-}
-.dark-hr{
-  border: 0;
-  border-top: 2px solid #1a1a1a;
+.title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  margin: 0;
   padding-bottom: 1rem;
+}
+.hr_secondary {
+  border: 0;
+  border-top: thin solid #1a1a1a;
+  margin-bottom: 4rem;
+}
+.text-m {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #1a1a1a;
+  font-weight: 500;
+  margin-top: 10rem;
+}
+.pink {
+  color: #ff0076;
+}
+.services > h3 {
+  text-transform: uppercase;
+  font-size: 11rem;
+  font-weight: 300;
+  line-height: 10rem;
+  margin: 0;
+  margin-top: 9rem;
+}
+.services > h3 > span {
+  text-decoration: line-through;
+}
+.skills-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.skills-div > div > ul{
+    margin: 0;
+    padding: 0;
+}
+.skills-div > div > ul > li {
+  font-size: 4rem;
+  list-style: none;
+  font-weight: 300;
+  line-height: 4rem;
+}
+.p {
+  font-size: 2rem;
+  line-height: 2rem;
+  width: 60%;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: #dedede;
+}
+.p2 {
+  text-transform: uppercase;
+}
+
+.circle {
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.m-t{
+    margin-top: 4rem !important;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }
