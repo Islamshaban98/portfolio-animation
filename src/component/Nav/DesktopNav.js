@@ -42,8 +42,12 @@ const DesktopNav = () => {
             value={Lang.locale}
             onChange={Lang.selectLang}
           >
-            <option value="en">ENGLISH</option>
-            <option value="sp">SPANISH</option>
+            <option value="en" className="optionClass">
+              ENGLISH
+            </option>
+            <option value="sp" className="optionClass">
+              SPANISH
+            </option>
           </select>
         </li>
       </ul>
