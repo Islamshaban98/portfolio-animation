@@ -16,7 +16,7 @@
   background-color: transparent;
   text-transform: uppercase;
 }
-.menu > ul > li :active{
+.active{
   border-bottom: 3px solid #A5FF75
 
 }
@@ -32,6 +32,7 @@
   margin: 0 auto;
   padding: 70px 0;
   text-align: center;
+ 
 }
 .mobile-menu-div > ul {
   list-style: none;

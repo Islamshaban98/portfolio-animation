@@ -55,6 +55,8 @@ line-height: 5vw;
 color: #dedede;
 font-weight: 400;
 margin-bottom: 4rem;
+margin-top: 4rem;
+padding-left: 2rem ;
 }
 .social-link > ul > li {
     color: #dedede !important;   
@@ -71,6 +73,7 @@ margin-bottom: 4rem;
     font-size: 4vw;
     line-height: 4vw;
     padding-left: 2rem ;
+    padding-bottom: 2rem;
     font-style: italic;
     letter-spacing: -3;
 }

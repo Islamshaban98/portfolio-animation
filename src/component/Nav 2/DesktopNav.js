@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { logo } from "../../img";
 import "./nav.css";
+import { Link, NavLink } from "react-router-dom";
+// import { LOCALES } from "../../i18n";
+
 const DesktopNav = () => {
+  // const [locale, setLocale] = useState(LOCALES.ENGLISH);
   return (
     <nav
       className="menu"
@@ -12,25 +16,34 @@ const DesktopNav = () => {
         right: "0",
         bottom: "auto",
         margin: "0 auto",
-        zIndex: "10",
+        zIndex: "10000",
         mixBlendMode: "difference",
       }}
     >
-      <a className="logo">
+      <Link className="logo" to="/">
         <img src={logo} alt="" style={{ width: "60px" }} />
-      </a>
+      </Link>
       <ul>
-        <li className="active">
-          <a href="#Home">Home</a>
+        <li>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a>Manifiesto</a>
+          <NavLink to="/Manifest" activeClassName="active">
+            Manifiest
+          </NavLink>
         </li>
         <li>
-          <a>Contacto</a>
+          <NavLink to="/Contact" activeClassName="active">
+            Contact
+          </NavLink>
         </li>
         <li>
-          <a className="green-lang">English</a>
+          <button
+            className="green-lang"
+            // onClick={() => setLocale(LOCALES.SPANISH)}
+          >
+            ENGLISH
+          </button>
         </li>
       </ul>
     </nav>

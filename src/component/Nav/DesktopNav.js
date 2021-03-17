@@ -1,7 +1,10 @@
 import React from "react";
+import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
 import { logo } from "../../img";
 import "./nav.css";
+import { useLang } from "../Context/Wrapper";
 const DesktopNav = () => {
+  const Lang = useLang();
   return (
     <nav
       className="menu"
@@ -16,21 +19,32 @@ const DesktopNav = () => {
         mixBlendMode: "difference",
       }}
     >
-      <a className="logo">
+      <Link className="logo" to="/">
         <img src={logo} alt="" style={{ width: "60px" }} />
-      </a>
+      </Link>
       <ul>
         <li>
-          <a href="#portfolio">Works</a>
+          <NavLink to="/" activeClassName="active">
+            {Lang.translate("works")}
+          </NavLink>
         </li>
         <li>
-          <a href="#mainfest">Manifiesto</a>
+          <NavLink to="/Manifest" activeClassName="active">
+            {Lang.translate("manifest")}
+          </NavLink>
         </li>
         <li>
-          <a>Contacto</a>
+          <NavLink to="/Contact">Contact</NavLink>
         </li>
         <li>
-          <a className="green-lang">English</a>
+          <select
+            className="green-lang"
+            value={Lang.locale}
+            onChange={Lang.selectLang}
+          >
+            <option value="en">ENGLISH</option>
+            <option value="sp">SPANISH</option>
+          </select>
         </li>
       </ul>
     </nav>

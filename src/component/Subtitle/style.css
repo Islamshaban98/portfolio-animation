@@ -35,3 +35,20 @@
     /* overflow: hidden; */
 
 }
+@media only screen and (max-width: 960px) {
+  .sub-div{
+    flex-direction: column;
+  }
+  .sub-div > p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    font-style: italic;
+  }
+  .sub-tit {
+    font-size: 2rem;
+    line-height: 2rem;
+    z-index: 99;
+    text-transform: uppercase;
+  }
+}

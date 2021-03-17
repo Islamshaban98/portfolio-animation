@@ -1,29 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React, { Component } from "react";
 import { TweenMax, Power3 } from "gsap";
+import Home from "../../Pages/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Contact from "../../Pages/Contact";
+import Manifest from "../../Pages/Manifest";
+import NavPage from "../../Pages/NavPage";
+import { I18Provider, LOCALES } from "../../i18n";
 
-const BeTxt = () => {
-  const parag = useRef(null);
-  useEffect(() => {
-    console.log(parag);
-    TweenMax.fromTo(
-      parag.current,
-      2,
-      {
-        opacity: 0.5,
-      },
-      { opacity: 1, y: -50, ease: Power3.easeOut, delay: 0, duration: 0.2 }
-    );
-    // document.getElementById("hidden") &&
-    //   (window.onload = function () {
-    //     document.getElementById("hidden").style.display = "none";
-    //   });
-  }, []);
-
+const LoadingMessage = () => {
   return (
     <div
       style={{ margin: "0 auto", padding: "20% 0", textAlign: "center" }}
-      id="#hidden"
-      ref={parag}
+      className="hidden"
     >
       <p
         style={{
@@ -38,5 +26,56 @@ const BeTxt = () => {
     </div>
   );
 };
-
-export default BeTxt;
+function withSplachScreen() {
+  return class extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        loading: true,
+      };
+    }
+    componentDidMount() {
+      try {
+        TweenMax.fromTo(
+          ".hidden",
+          2,
+          {
+            opacity: 0.5,
+          },
+          { opacity: 1, y: -50, ease: Power3.easeOut, delay: 0, duration: 0.2 }
+        );
+        setTimeout(() => {
+          this.setState({
+            loading: false,
+          });
+        }, 1500);
+      } catch (err) {
+        console.log(err);
+        this.setState({
+          loading: false,
+        });
+      }
+    }
+    render() {
+      if (this.state.loading) return LoadingMessage();
+      return (
+        // <I18Provider locale={LOCALES.ENGLISH}>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/Manifest">
+              <Manifest />
+            </Route>
+            <Route exact path="/Contact">
+              <Contact />
+            </Route>
+          </Switch>
+        </Router>
+        // </I18Provider>
+      );
+    }
+  };
+}
+export default withSplachScreen;

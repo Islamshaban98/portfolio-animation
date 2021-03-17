@@ -33,7 +33,6 @@ export const Coursor = () => {
 
   const handleLinkHoverEvents = () => {
     document.querySelectorAll("a").forEach((el) => {
-      console.log(el);
       el.addEventListener("mouseover", () => setLinkHovered(true));
       el.addEventListener("mouseout", () => setLinkHovered(false));
     });

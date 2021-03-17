@@ -56,13 +56,20 @@ const LightBg = () => {
       {/* portfolio */}
       <div className="wrapper" id="portfolio">
         <Title title="selected work" className="title" />
-        <Subtitle title="UNFPA" num="1" parag="Diseño web" src={unfpa} />
+        <Subtitle
+          title="UNFPA"
+          num="1"
+          parag="Diseño web"
+          src={unfpa}
+          href="https://www.behance.net/gallery/106404975/UNFPA-web-design"
+        />
         <hr className="hr_secondary HR" />
         <Subtitle
           title="TRIOTECA"
           num="2"
           parag="Diseño de producto "
           src={trioteca}
+          href="https://www.behance.net/gallery/101094641/TRIOTECA"
         />
         <hr className="hr_secondary HR" />
         <Subtitle
@@ -70,9 +77,16 @@ const LightBg = () => {
           num="3"
           parag="Diseño ecommerce"
           src={svd}
+          href="https://www.behance.net/gallery/84539465/W90-Multi-brand-fashion-ecommerce-proposal"
         />
         <hr className="hr_secondary HR" />
-        <Subtitle title="Jardinfo" num="4" parag="UI / UX" src={jardinfo} />
+        <Subtitle
+          title="Jardinfo"
+          num="4"
+          parag="UI / UX"
+          src={jardinfo}
+          href="https://www.behance.net/gallery/110959425/Jardinfo-UIUX-Design"
+        />
         <hr className="hr_secondary HR" />
         <p className="text-m par">
           Super advice! Check out more projects on{" "}
@@ -125,7 +139,7 @@ const LightBg = () => {
             </ul>
           </div>
           <div className="circle">
-            <SvgTxt />
+            <SvgTxt className="circleWidth" />
           </div>
         </div>
         <p className="text-m m-t par">

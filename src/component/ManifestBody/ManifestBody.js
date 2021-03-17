@@ -39,14 +39,14 @@ const ManifestBody = () => {
         </p>
       </hgroup>
       <div className="paragDiv">
-        <p className="p anim">
+        <p className="pManifest anim">
           I admire many successful people like Emilio Duró, Steve Jobs, Pep
           Guardiola or chef Dabiz Muñoz, among others. I especially like these
           last two because they suffer when they meet footballers or chefs,
           respectively, who destroy the profession. The same happens to me with
           design.{" "}
         </p>
-        <p className="p anim">
+        <p className="pManifest anim">
           Across my career I had identify mechanics that were always the same:
           projects without passion and with the philosophy of "everything fast",
           "as cheap as possible" and a long etcetera. So, tired of being
@@ -54,7 +54,7 @@ const ManifestBody = () => {
           find my demands in them with no success, I decided to change my life
           and offer it for myself.
         </p>
-        <p className="p anim">
+        <p className="pManifest anim">
           I offer my services to startups, new businesses or individuals who
           really appreciate design and quality in a job done. If not, I'm not
           your match.
@@ -65,7 +65,7 @@ const ManifestBody = () => {
           Do you want to know if we might match? Pay attention
           <a
             className="outlined uppercase text-xl js-anchor-link"
-            href="#commsadmets"
+            href="#commsadmetsManifest"
           >
             scroll down
           </a>

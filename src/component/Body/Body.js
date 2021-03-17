@@ -4,6 +4,7 @@ import "./Body.css";
 import gsap from "gsap/gsap-core";
 import { Power3 } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   useEffect(() => {
@@ -47,14 +48,9 @@ const Body = () => {
           className="helpTxt2 anim"
           txt="When you are happy doing what you love, there are no limits. Right?"
         />
-        <a
-          className="mainfest helpTxt2 anim"
-          href="https://www.awwwards.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <Link className="mainfest helpTxt2 anim" to="/Manifest">
           mainfest
-        </a>
+        </Link>
       </div>
       <div className="txt2Div ">
         <p className="anim">

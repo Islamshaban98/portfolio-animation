@@ -26,7 +26,7 @@ const ManifestLight = () => {
     });
   }, []);
   return (
-    <div className="light">
+    <div className="light" id="commsadmetsManifest">
       <Title title="The 10 commandments" className="rightTxt" />
       <div className="sub-div-manifest">
         <p className="sub-tit-manifest">

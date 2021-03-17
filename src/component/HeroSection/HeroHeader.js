@@ -2,10 +2,12 @@ import React, { useEffect, useRef } from "react";
 import "./heroSection.css";
 import { profile } from "../../img/index";
 import gsap from "gsap/gsap-core";
-// import Svg from "../SVG/svg";
+import { useLang } from "../Context/Wrapper";
+
 const HeroHeader = () => {
   const title = useRef();
   const img = useRef();
+  const Lang = useLang();
   useEffect(() => {
     gsap.fromTo(title.current, { autoAlpha: 0 }, { autoAlpha: 1, duration: 5 });
     gsap.fromTo(img.current, { autoAlpha: 0 }, { autoAlpha: 1, duration: 5 });
@@ -29,7 +31,7 @@ const HeroHeader = () => {
               marginTop: "-65px",
             }}
           >
-            I am Xavi Nogueres, a 8 years experienced
+            {Lang.translate("title")}
           </h1>
           <p
             style={{
@@ -43,7 +45,6 @@ const HeroHeader = () => {
             creative digtal designer
           </p>
         </hgroup>
-        {/* <Svg /> */}
       </div>
       <div style={{ marginTop: "-280px" }} ref={img}>
         <img src={profile} alt="" />

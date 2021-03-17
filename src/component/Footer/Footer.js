@@ -2,6 +2,7 @@ import gsap from "gsap/gsap-core";
 import { Power3 } from "gsap/gsap-core";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 export const Footer = () => {
   useEffect(() => {
@@ -31,7 +32,7 @@ export const Footer = () => {
   }, []);
   return (
     <>
-      <section>
+      <section style={{ zIndex: "1" }}>
         <div className="marquee-row">
           <div>
             <span>Say</span>
@@ -103,13 +104,13 @@ export const Footer = () => {
               </a>
             </li>
             <li className="anim8">
-              <a
-                href="https://www.youtube.com/channel/UCtNMQeeg_DRFn0aDWSERwig"
+              <NavLink
+                to="https://www.youtube.com/channel/UCtNMQeeg_DRFn0aDWSERwig"
                 target="_blank"
                 rel="noreferrer"
               >
                 Youtube
-              </a>
+              </NavLink>
             </li>
           </ul>
           <p className="anim8">Don't be shy...</p>

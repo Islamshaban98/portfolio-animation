@@ -16,13 +16,23 @@
   background-color: transparent;
   text-transform: uppercase;
 }
+.active{
+  border-bottom: 3px solid #A5FF75
 
+}
 .logo {
   cursor: pointer;
 }
 .green-lang {
   color: #a5ff75;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+ outline: none;
 }
+
 .mobile-menu-div {
   margin: 0 auto;
   padding: 70px 0;

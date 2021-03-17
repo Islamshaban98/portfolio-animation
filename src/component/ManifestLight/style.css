@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }
 .sub-div-manifest > p{
     font-size: 4rem;
@@ -31,3 +32,15 @@
     border-top: thin solid #1a1a1a;
     margin-bottom: 2rem ;
   }
+@media only screen and (max-width: 960px) {
+    .rightTxt{
+        
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .sub-div-manifest > p{
+        font-size: 2rem;
+        line-height: 2rem;
+        padding-bottom: 1rem;
+    }
+}

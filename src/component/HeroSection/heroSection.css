@@ -25,7 +25,7 @@
        flex-direction: column;
        align-items: flex-start;
        justify-content: center;
-       padding-top: 4rem !important;
+       padding-top: 14rem !important;
    }
    .hgroup-mobile > h1{
        font-size: 2rem !important;
@@ -33,9 +33,10 @@
    .hgroup-mobile > p{
     font-size: 4rem !important;
     line-height: 4rem !important;
+    margin-top: 3rem;
 } 
 .hero-header img{
     width: 200px;
-    margin-top: 220px;
+    margin-top:288px;
 } 
 }

@@ -9,6 +9,7 @@
 .contactBodyDiv > hgroup >h1{
     margin-bottom: 1rem;
     font-weight: 400;
+    font-size: 2rem;
 }
 .contactBodyDiv >hgroup >p{
     font-size: 9rem;
@@ -22,7 +23,7 @@
     font-size: 2.4rem;
     line-height: 2.2rem;
     color: #dedede;
-    padding: 13rem 2rem;
+    padding: 13rem 5rem;
 }
 .contactDiv >ol{
     text-transform: uppercase;
@@ -36,4 +37,15 @@
 }
 .contactDiv >ol>li>span{
     text-decoration: line-through;
+}
+@media only screen and (max-width: 960px) {
+    .contactBodyDiv > hgroup >h1{
+        font-size: 1rem;
+    }
+    .contactBodyDiv >hgroup >p{
+        font-size: 4rem;
+      
+        line-height:4rem;
+      
+    }
 }

@@ -2,6 +2,7 @@ import gsap from "gsap/gsap-core";
 import { Power3 } from "gsap/gsap-core";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 const ContactBody = () => {
   useEffect(() => {
@@ -46,9 +47,9 @@ const ContactBody = () => {
         <ol className="anim">
           <li>
             Send me an{" "}
-            <a href="mailto:hello@xavinogueres.work?Subject=Web%20inquiry">
+            <Link to="mailto:hello@xavinogueres.work?Subject=Web%20inquiry">
               email
-            </a>
+            </Link>
           </li>
           <li>
             <span>We go to take a beer</span> (stay safe 😷)
