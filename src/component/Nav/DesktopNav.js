@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { logo } from "../../img";
 import "./nav.css";
 import { useLang } from "../Context/Wrapper";
@@ -34,7 +34,7 @@ const DesktopNav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Contact">Contact</NavLink>
+          <NavLink to="/Contact">{Lang.translate("contact")}</NavLink>
         </li>
         <li>
           <select
