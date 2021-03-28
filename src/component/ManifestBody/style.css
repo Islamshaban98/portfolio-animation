@@ -1,0 +1,49 @@
+.manifestBodyDiv{
+    margin-top: 15rem;
+    padding: 0 2rem;
+}
+.manifestBodyDiv >hgroup{
+    color: #dedede;
+    text-transform: uppercase;
+}
+.manifestBodyDiv > hgroup >h1{
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 2rem;
+
+}
+.manifestBodyDiv >hgroup >p{
+    font-size: 9rem;
+    margin: 0;
+    line-height: 7.5rem;
+    font-weight: 300;
+}
+.paragDiv{
+    margin-top: 15rem;
+}
+.paragDiv p:last-child{
+  text-transform: uppercase;  
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.pManifest{
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 60%;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    color: #dedede;
+}
+@media only screen and (max-width: 960px) {
+    .manifestBodyDiv >hgroup >p{
+        font-size: 4rem;
+        line-height: 4rem;
+    }  
+    .manifestBodyDiv{
+        margin-top: 8rem;
+    }
+    .paragDiv p:last-child{
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+}

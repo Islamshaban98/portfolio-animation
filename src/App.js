@@ -1,12 +1,13 @@
-import { Coursor } from "./component/Cursor/Coursor";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import withSplachScreen from "./component/BeTxt/BeTxt";
 
 function App() {
   return (
-    <div>
-      <a>hello there i am a link hover on me to see magic</a>
-      <Coursor />
-    </div>
+    <Router>
+      <withSplachScreen />
+    </Router>
   );
 }
 
-export default App;
+export default withSplachScreen(App);
